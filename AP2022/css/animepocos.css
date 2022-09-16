@@ -1,0 +1,449 @@
+/* Custom CSS for GRIF */
+html, document{
+scroll-behavior: smooth;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: #231f20;
+	padding: 0;
+	margin:0;
+}
+
+  html, body {
+        height: 100%;
+    }
+
+.display-1{
+	font-size: 2.6rem;
+}
+
+.display-2{
+	font-size: 2.2rem;
+}
+
+.font-black{
+	font-weight:900;
+}
+
+.navbar-brand img{
+	width:50%;
+	padding: 0.5rem 0;
+}
+
+a{
+	color: #231f20;
+}
+
+a:hover{
+	color: #00aeef;
+}
+
+.nav-link{
+	font-size:1rem;
+}
+
+.navicon{
+	font-size:1.5rem;
+}
+
+.btn-primary{
+	background: transparent;
+	border: 2px solid #e5006e;
+	border-radius: 50px;
+	color: #e5006e;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	font-weight:900;
+	padding: 1.5rem 1.5rem 1.4rem 1.5rem;
+	line-height: 0;
+}
+
+.btn-primary.white{
+	border-color: #fff;
+	color: #fff;
+
+}
+
+.btn-primary:hover{
+	background: #e5006e;
+		border-color: #fff;
+}
+.btn-primary.white:hover{
+	background: #e5006e;
+	border-color: #fff;
+}
+
+.navbar-brand{
+	width:380px;
+}
+
+.bg1{
+	background:#00bad8;
+}
+.bg2{
+	background:#d00cc0;
+}
+.bg3{
+	background:#ff7300;
+}
+.bg4{
+	background:#93af1e;
+}
+.bg5{
+	background:#e5006e;
+}
+.bg6{
+	background:#e5c400;
+}
+
+
+.up-divisor{
+	margin:0;
+	padding:0;
+	position:absolute;
+	width:100%;
+}
+.up-divisor img{
+	width:100%;
+	height:40px;
+}
+#Hero {
+	background-color: #8e1cb0;
+	background-image: url(../images/hero.jpg);
+	color: #fff;
+	background-size: cover;
+	background-position: top center;
+}
+
+
+
+#HeroMobile{
+	text-align:center;
+	margin-bottom:3rem;
+}
+#Hero .display-1{
+	font-size: 2rem;
+	
+}
+#HeroMobile .font-black{
+	color: #00aeef;
+}
+
+
+.Hero-Mobile{
+	display:none;
+}
+
+.date-hero{
+	color:#fff;
+	text-align:center;
+	padding:1rem;
+	font-size:1.2rem;
+	background-image: linear-gradient(to bottom right, #ff2b91 , #e5006e);
+}
+
+#Atracoes{
+	margin-top:35px;
+}
+.card{
+	border:none;
+	border-radius:5px;
+	-webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.15);
+	text-align:center;
+	padding:0rem;
+	min-width:170px;
+	color:#fff;
+	margin-bottom:2rem;
+}
+.card-body{
+	padding:1rem;
+}
+
+.card img{
+	width: 100%;
+	display:inline-block;
+	margin: 0;
+	border-radius:5px 5px 0 0 ;
+}
+.card-title{
+	font-size: 2rem;
+	font-weight:900;
+}
+.card-tag{
+	font-size: 0.8rem;
+	font-weight:700;
+	text-transform:uppercase;
+	padding:0.5rem;
+	position:absolute;
+	left:1rem;
+	border-radius:0 0 5px 5px;
+}
+
+.card a, .card a:hover, .card-title:link{
+	color: #231f20;
+	text-decoration: none;
+}
+
+.card a.btn:link, .card a.btn:visited, .card a.btn:active{
+	color: #00aeef;
+}
+.card a.btn:hover{
+	color: #fff;
+}
+
+.card .btn{
+	margin:0.5rem;
+}
+
+.seguro-texto{
+	font-size: 1.2rem;
+	font-weight:900;
+	text-transform: none;
+}
+
+#Clientes {
+	text-align:center;
+	padding: 5rem 0;
+}
+#Clientes .col-sm-3{
+	padding:2rem;
+}
+
+.img-clientes{
+
+}
+
+#Evento {
+	margin-top: 35px;
+	background: #00aeef;
+	background: linear-gradient(135deg, #8e1cb0, #d00cc0);
+	color: #fff;
+	text-align:center;
+	padding: 5rem 0;
+}
+
+
+#Contato {
+	text-align:center;
+	padding: 5rem 0;
+	background-color: #4F1266;
+	color: #fff;
+	background-image: url(../images/bg-contato.png);
+	background-size: cover;
+	background-position: top center;
+}
+
+#Contato .row{
+	text-align:left;
+}
+
+
+.contato-text-bold,.contato-text-bold:hover,.contato-text-bold:active,.contato-text-bold:focus,.contato-text-bold:visited{
+	font-weight:700;
+	font-size:1.2rem;
+	color: #ffffff !important;
+	text-decoration:none;
+	cursor: default;
+}
+.contato-text{
+	font-weight:400;
+	font-size:1rem;
+}
+
+.icon-contato{
+	color: #e5006e;
+	font-size:2rem;
+	text-align:center;
+	
+}
+.link-contato .icon-contato i{
+		vertical-align:top;
+	    line-height: 3.9rem;
+		margin-right:1.5rem;
+}
+
+
+.icon-contato a,.icon-contato a:active,.icon-contato a:visited{
+	color: #ffffff;
+	text-decoration:none;
+}
+.icon-contato a:hover{
+	color: #e5006e;
+}
+.icon-contato i{
+	color: #fff !important;
+	    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+.form-group select:focus ~ .control-label, .form-group input:focus ~ .control-label, .form-group textarea:focus ~ .control-label{
+	color: #FF2B91;
+	
+}
+.form-group .bar::before{
+	background: #FF2B91;
+}
+
+.form-group .control-label{
+	color: #fff;
+}
+.form-group .bar{
+	    border-bottom: 0.0625rem solid #fff;
+}
+
+/*
+.form-group input, .form-group textarea{
+	    background: rgba(0,0,0,0.3);
+		border-radius:5px;
+}
+
+
+.form-group select ~ .control-label, .form-group input:focus ~ .control-label, .form-group input:valid ~ .control-label, .form-group input.form-file ~ .control-label, .form-group input.has-value ~ .control-label, .form-group textarea:focus ~ .control-label, .form-group textarea:valid ~ .control-label, .form-group textarea.form-file ~ .control-label, .form-group textarea.has-value ~ .control-label{
+	  top: -1.2rem;
+}
+
+.form-group .control-label{
+	padding-left: 0.5rem;
+}
+*/
+
+#BarMobile{
+	background-color:#fff;
+	-webkit-box-shadow: 0px -2px 20px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px -2px 20px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px -2px 20px 0px rgba(0,0,0,0.15);
+	height:3.8rem;
+	 display: flex;
+}
+#BarMobile a{
+	font-size:1.9rem;
+	width:100%;
+	height:100%;
+	display:inline-block;
+	line-height: 3.8rem;
+}
+
+#BarMobile .fa-phone{
+	font-size:1.4rem;
+}
+
+#BarMobile .btn-bm{
+	background-color: #00aeef;
+	color: #fff;
+	border-radius:0;
+	width: 100%;
+	height: 100%;
+	font-size: 1rem;
+}
+#BarMobile .bm-icon-phone{
+	line-height: 3.5rem;
+	border-left: solid 1px #cccccc;
+}
+
+.bm-icon{
+	position:relative;
+	width:15%;
+	height:100%;
+	display:inline-block;
+	text-align:center;
+}
+
+.bm-btn{
+	position:relative;
+	width:70%;
+	height:100%;
+	display:inline-block;
+}
+
+#MenuSeguros{
+	position:absolute;
+	top:0;
+	left:0;
+	padding-top: 80px;
+	background-color:#f5f5f5;
+	z-index:99996;
+	width:100%;
+	height:100%;
+	overflow: auto;
+}
+
+
+
+#BackBar{
+	background-color:#fff;
+	-webkit-box-shadow: 0px -2px 20px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px -2px 20px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px -2px 20px 0px rgba(0,0,0,0.15);
+	height:3.8rem;
+	 display: flex;
+	z-index:99998;
+	 position:relative;
+	 top:0px;
+	 left:0px;
+	 width:100%;
+}
+#BackBar a{
+	font-size:1.5rem;
+	width:100%;
+	height:100%;
+	display:inline-block;
+	line-height: 3.8rem;
+}
+
+#BackBar .bm-btn{
+	font-size: 1.2rem;
+    font-weight: 900;
+	line-height: 3.6rem;
+}
+
+#ContainerSlider{
+	z-index:99997;
+	position:fixed;
+	width:100%;
+	height:100%;
+	top: 0px;
+    left: 100%;
+	-webkit-transition: left 300ms; /* Safari */
+	transition: left 300ms;
+}
+@media only screen and (max-width: 640px) {
+	
+	.navbar-brand{
+		text-align:center;
+		width:100%;
+	}
+	.card{
+		   min-width: 100px;
+	}
+	
+	#Hero {
+		background-color: #9b00ff;
+		background-image: none;
+		color: #fff;
+		text-align: center !important;
+		padding-bottom:30px;
+	}
+	
+	#Hero .display-1{
+		font-size: 1.6rem;
+		
+	}
+	
+	
+	#Hero .align-items-center{
+		height:auto;
+		padding-top: 30px;
+	}
+	
+	.Hero-Mobile{
+		display:block;
+		width:100%;
+		margin:0 auto 20px auto;
+		max-width:350px;
+		
+	}
+	
+}

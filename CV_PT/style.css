@@ -1,0 +1,218 @@
+@page {
+    size: auto;
+    margin: 10pt 16pt;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 10pt 16pt;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+
+.flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.header {
+    justify-content: left;
+    margin-bottom: 20px;
+    padding-left: 10%;
+}
+
+.flex-items img {
+    height: 80px;
+    border-radius: 50%;
+}
+
+.flex-items.date {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.lone1 {
+    padding-top: 4px;
+}
+
+.lone2 {
+    padding-top: 7px;
+}
+
+.contact {
+    justify-content: space-evenly;
+    padding: 10px 7.5%;
+    border-top: solid 1px #b9bbc0;
+    border-bottom: solid 1px #b9bbc0;
+    font-weight: 300;
+    font-size: 8pt;
+}
+
+.content {
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+
+.content>.flex-items {
+    padding: 10px;
+}
+
+.content>.flex-items:nth-child(1) {
+    flex-grow: 3;
+    width: 70%;
+}
+
+.content>.flex-items:nth-child(2) {
+    flex-grow: 1;
+    width: 30%;
+}
+
+.block-item {
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.block-item>.flex-items:nth-child(1) {
+    flex-grow: 1;
+
+    width: 15%;
+}
+
+.block-item>.flex-items:nth-child(2) {
+    flex-grow: 0;
+    width: 5%;
+}
+
+.block-item>.flex-items:nth-child(3) {
+    flex-grow: 10;
+    width: 75%;
+}
+
+.date {
+    font-weight: 300;
+    font-size: 7pt;
+}
+
+.item-header {
+    text-transform: uppercase;
+    color: #2180b0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 10pt;
+}
+
+.item-header .fas {
+    color: #000000;
+}
+
+
+.job-title {
+    font-size: 9pt;
+    font-weight: 600;
+}
+
+.job-place {
+    font-size: 8pt;
+    font-weight: 300;
+}
+
+.side-column {
+    margin-top: 10%;
+}
+
+.job-description {
+    font-size: 7pt;
+    font-weight: 400;
+    color: #707177;
+}
+
+#objetivo {
+    color: black;
+    font-size: 8pt;
+}
+
+.block-item .job-description,
+.academic-item .job-description {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.fas {
+    margin-right: 6px;
+}
+
+.round {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+div.academic {
+    margin-top: -3%;
+}
+
+.name {
+    font-size: 14pt
+}
+
+.born {
+    font-size: 6pt
+}
+
+.point {
+    position: relative;
+    font-size: 14pt;
+}
+
+.point:after {
+    content: "";
+    background-color: #dadada;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 5px;
+    top: 16px;
+}
+
+
+/* Debug encontrando o last-child
+.experience-item:last-child .point, .academic-item:last-child .point{
+color:#ff0000 !important;
+}
+Fim debug */
+
+.experience-item:last-child .point:after,
+.academic-item:last-child .point:after {
+    content: none;
+    background: transparent;
+}

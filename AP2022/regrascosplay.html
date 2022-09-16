@@ -1,0 +1,872 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Regras Concurso Cosplay - Anime Poços 2022</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<meta property="og:title" content="Anime Poços" />
+
+	<meta property="og:type" content="website" />
+
+	<meta property="og:url" content="https://animepocos.com.br" />
+
+	<meta property="og:image" content="images/og_image.png" />
+
+	<meta property="og:description" content="Animes, games e cultura pop em uma incrível experiência!" />
+
+	<meta name="description" content="Animes, games e cultura pop em uma incrível experiência!">
+
+	<meta name="author" content="Thiago Geroto">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+
+
+
+
+
+
+
+	<style>
+		#hero,
+		#heroRegras {
+
+			transition: all 1500ms;
+
+			background-color: #be00ff;
+
+			background-image: url('images/bg_hero_preload.webp');
+
+			background-size: cover;
+
+			padding: 180px 0;
+
+			position: relative;
+
+			z-index: 10;
+
+		}
+
+
+
+		#heroRegras {
+
+			background-image: url('images/bg_hero_3.webp');
+
+			padding: 80px 0;
+
+			background-position: center right;
+
+		}
+
+
+
+
+
+		.hero_itens {
+
+			position: relative;
+
+			z-index: 1000;
+
+		}
+
+
+
+
+
+
+
+
+
+		.HeroPhrase {
+
+			color: #ffffff;
+
+			text-shadow: 5px 0px 20px rgba(0, 0, 0, .4);
+
+
+
+		}
+
+		.HeroPhrase h1 {
+
+			font-size: 2rem;
+
+		}
+
+
+
+		.bg-gradient-1 {
+
+			background: rgb(255, 142, 102);
+
+			background: linear-gradient(90deg, rgba(255, 142, 102, 1) 0%, rgba(255, 0, 128, 1) 100%);
+
+		}
+
+
+
+		.bg-gradient-1-r {
+
+			background: rgb(255, 142, 102);
+
+			background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 142, 102, 1) 100%);
+
+		}
+
+
+
+		.btn-primary,
+		.btn-outline-primary {
+
+			background-color: #ff0080;
+
+			border-color: #ff0080;
+
+			border-width: 2px;
+
+			padding: 10px 20px;
+
+			transition: all 300ms;
+
+			box-shadow: 0px 0px 0px rgba(127, 0, 255, .3);
+
+		}
+
+		.btn-outline-primary {
+
+			background: transparent;
+
+			color: #ffffff;
+
+			border-color: #ffffff;
+
+		}
+
+
+
+		.btn-outline-primary:hover,
+		.btn-primary:hover {
+
+			background-color: #7f00ff;
+
+			border-color: #7f00ff;
+
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, .3);
+
+
+
+		}
+
+
+
+		.font-color-1 {
+
+			color: #ffffff;
+
+		}
+
+
+
+		.f-2 {
+
+			font-size: 20px;
+
+		}
+
+
+
+
+
+		.separador-branco {
+
+			background-image: url(images/separador-branco.png);
+
+			background-repeat: no-repeat;
+
+			width: 100%;
+
+			height: 81px;
+
+			margin-top: -81px;
+
+			background-size: 100%;
+
+			background-position: center bottom;
+
+		}
+
+		.separador-svg {
+
+			width: 100%;
+
+			height: 62px;
+
+			margin-top: -61px;
+
+			resize: both;
+
+			z-index: 20;
+
+			position: relative;
+
+		}
+
+		.separador-svg>svg {
+
+			width: 100%;
+
+			height: 100%;
+
+		}
+
+
+
+		.card {
+
+			border: none;
+
+			border-radius: 15px;
+
+			box-shadow: 0px 3px 20px rgba(127, 0, 255, .3);
+
+		}
+
+
+
+		.card>img {
+
+			border: none;
+
+			border-radius: 15px 15px 0 0;
+
+		}
+
+
+
+
+
+
+
+		.regras h2 {
+
+			font-size: 1.5rem;
+
+			text-transform: uppercase;
+
+			margin-top: 3rem;
+
+			margin-bottom: 2rem;
+
+			color: #be00ff;
+
+		}
+
+
+
+		.regras h3 {
+
+			font-size: 1.2rem;
+
+			text-transform: uppercase;
+
+			margin-top: 3rem;
+
+			margin-bottom: 1rem;
+
+
+
+		}
+
+
+
+
+
+
+
+		@media (min-width: 576px) {
+
+			.HeroPhrase {
+
+				color: #ffffff;
+
+			}
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		canvas {
+
+			display: block;
+
+
+
+
+		}
+
+		/* ---- particles.js container ---- */
+
+
+
+		#particles-js {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background: transparent;
+			filter: blur(2px) !important;
+
+			mix-blend-mode: screen;
+
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div id="Site">
+
+
+
+		<div id="header" class="container text-center p-2">
+
+			<img src="images/anime-pocos.png" width="200" />
+
+		</div>
+
+		<div id="heroRegras" class="container-fluid">
+
+			<div class="row mb-3 hero_itens">
+
+				<div class="col-12 col-lg-6 offset-lg-3 text-center HeroPhrase">
+					<h1>Regras do Concurso Cosplay <Br> Anime Poços 2022</h1>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="separador-branco"></div>
+
+
+
+		<div class="container pt-5 pb-5">
+
+			<div class="row">
+
+				<div class="regras col-12 col-lg-6 offset-lg-3">
+
+					<h2 class="western">1. CONCURSO</h2>
+
+					<ul>
+
+						<li>
+
+							<p>No concurso cosplay do Anime Po&ccedil;os, qualquer pessoa poder&aacute; participar,
+								independente de ra&ccedil;a, nacionalidade, g&ecirc;nero e identidade sexual.</p>
+
+						</li>
+
+						<li>
+
+							<p>N&atilde;o h&aacute; limite m&iacute;nimo ou m&aacute;ximo de idade dos participantes,
+								por&eacute;m, participantes de at&eacute; 8 anos devem ter supervis&atilde;o dos pais.
+							</p>
+
+						</li>
+
+						<li>
+
+							<p>Ser&atilde;o considerados v&aacute;lidos cosplayers de personagens origin&aacute;rios de
+								qualquer tipo de m&iacute;dia impressa ou visual (animes, mang&aacute;s, HQ, filmes,
+								anima&ccedil;&otilde;es ocidentais, videogames, seriados orientais e ocidentais e
+								live-actions), executados da forma original, desde que o personagem seja de acesso
+								p&uacute;blico. Personagens com vers&otilde;es criadas pelos pr&oacute;prios
+								participantes, assim como de fanzines e OCs poder&atilde;o participar, por&eacute;m
+								n&atilde;o ser&atilde;o julgados. </p>
+
+						</li>
+
+						<li>
+
+							<p>Como medida de seguran&ccedil;a e integridade aos menores de idade presentes no evento,
+								&eacute; vetada a participa&ccedil;&atilde;o e representa&ccedil;&atilde;o de
+								personagens de car&aacute;ter er&oacute;tico/hentai. </p>
+
+						</li>
+
+						<li>
+
+							<p>&Eacute; vetada a participa&ccedil;&atilde;o de membros da comiss&atilde;o organizadora
+								do evento, havendo exce&ccedil;&atilde;o para membros antigos que n&atilde;o fazem mais
+								parte do quadro da equipe. </p>
+
+						</li>
+
+						<li>
+
+							<p>&Eacute; estritamente proibida a utiliza&ccedil;&atilde;o de: explosivos, armas de fogo
+								(mesmo que descarregadas), armas brancas com fio ou objetos que representem perigo aos
+								presentes no evento. </p>
+
+						</li>
+
+					</ul>
+
+
+
+					<h2 class="western">2. INSCRI&Ccedil;&Atilde;O</h2>
+
+					<ul>
+
+						<li>
+
+							<p>A inscri&ccedil;&atilde;o dever&aacute; ser feita na base do Anime Po&ccedil;os,
+								pr&oacute;ximo &agrave; entrada, e l&aacute; dever&atilde;o preencher uma ficha de
+								inscri&ccedil;&atilde;o que ser&aacute; entregue aos coordenadores do concurso. </p>
+
+						</li>
+
+						<li>
+
+							<p>As inscri&ccedil;&otilde;es presenciais come&ccedil;ar&atilde;o &agrave;s 12h e se
+								encerrar&atilde;o 01h30min (UMA HORA E TRINTA MINUTOS) antes do in&iacute;cio do
+								concurso.</p>
+
+						</li>
+
+					</ul>
+
+
+
+					<h2 class="western">3. CATEGORIAS</h2>
+
+					<p style="margin-bottom: 0in; line-height: 100%;">O concurso cosplay de dividir&aacute; em 2 (duas)
+						categorias (Desfile e Apresenta&ccedil;&atilde;o Tradicional)</p>
+
+
+
+					<h3 class="western">CATEGORIA DESFILE</h3>
+
+					<ul>
+
+						<li>
+
+							<p>Totalizando 50 vagas. </p>
+
+						</li>
+
+						<li>
+
+							<p>J&uacute;ri T&eacute;cnico - Indument&aacute;ria, similaridade aos trajes originais do
+								personagem, dificuldade de execu&ccedil;&atilde;o.</p>
+
+						</li>
+
+					</ul>
+
+
+
+					<h3 class="western">CATEGORIA APRESENTA&Ccedil;&Atilde;O TRADICIONAL INDIVIDUAL</h3>
+
+					<ul>
+
+						<li>
+
+							<p>Totalizando 15 vagas. </p>
+
+						</li>
+
+						<li>
+
+							<p>J&uacute;ri T&eacute;cnico - Interpreta&ccedil;&atilde;o, qualidade e impacto da
+								apresenta&ccedil;&atilde;o, roteiro, conte&uacute;do e qualidade &aacute;udio-visual.
+							</p>
+
+						</li>
+
+					</ul>
+
+
+
+					<h2 class="western">4. J&Uacute;RI E JULGAMENTO</h2>
+
+					<ul>
+
+						<li>
+
+							<p>Os participantes ser&atilde;o julgados com notas de 0 (cinco) a 10 (dez), com intervalos
+								de 0,5 (meio ponto). Nota zero significa desclassifica&ccedil;&atilde;o. </p>
+
+						</li>
+
+						<li>
+
+							<p>Qualquer puni&ccedil;&atilde;o dever&aacute; ser revelada pelo j&uacute;ri antes da
+								informa&ccedil;&atilde;o dos vencedores. </p>
+
+						</li>
+
+						<li>
+
+							<p>O j&uacute;ri ser&aacute; composto por pessoas escolhidas pela organiza&ccedil;&atilde;o
+								e divulgaremos logo ap&oacute;s a confirma&ccedil;&atilde;o dos componentes. </p>
+
+						</li>
+
+					</ul>
+
+
+
+					<h2 class="western">5. CRIT&Eacute;RIOS DE AVALIA&Ccedil;&Atilde;O</h2>
+
+					<h3 class="western">CATEGORIA DESFILE:</h3>
+
+					<ul>
+
+						<li>
+
+							<p><strong>INDUMENT&Aacute;RIA:</strong> refere-se a qualidade de acabamento das roupas,
+								maquiagem, penteado e acess&oacute;rios pertencentes aos personagens como armaduras,
+								armas e etc., analisando o material utilizado e a qualidade do resultado final com que
+								foi apresentada.</p>
+
+						</li>
+
+						<li>
+
+							<p><strong>SIMILARIDADE AOS TRAJES ORIGINAIS DO PERSONAGEM:</strong> refere-se ao
+								qu&atilde;o fiel o cosplay est&aacute; ao personagem original, fazendo
+								compara&ccedil;&otilde;es das refer&ecirc;ncias disponibilizadas e com o conhecimento
+								geral do j&uacute;ri. </p>
+
+						</li>
+
+						<li>
+
+							<p><strong>DIFICULDADE DE EXECU&Ccedil;&Atilde;O:</strong> refere-se a avaliarmos a
+								qualidade, acabamento, grau de dificuldade na execu&ccedil;&atilde;o e n&iacute;vel de
+								detalhes. </p>
+
+						</li>
+
+					</ul>
+
+
+
+					<h3 class="western">CATEGORIA APRESENTA&Ccedil;&Atilde;O TRADICIONAL INDIVIDUAL:</h3>
+
+					<ul>
+
+						<li>
+
+							<p><strong>INTERPRETA&Ccedil;&Atilde;O:</strong> No crit&eacute;rio
+								interpreta&ccedil;&atilde;o, ser&aacute; avaliada, express&atilde;o corporal,
+								express&otilde;es e entona&ccedil;&atilde;o (ao vivo) ou sinergia com o &aacute;udio
+								(gravado), imers&atilde;o no personagem. </p>
+
+						</li>
+
+						<li>
+
+							<p><strong>QUALIDADE E IMPACTO DA APRESENTA&Ccedil;&Atilde;O:</strong> Este crit&eacute;rio
+								se refere ao desempenho da cena em si, o quanto o p&uacute;blico e o j&uacute;ri
+								absorvem e compreendem a hist&oacute;ria contada. </p>
+
+						</li>
+
+						<li>
+
+							<p><strong>ROTEIRO:</strong><strong> </strong>O crit&eacute;rio refere-se a
+								introdu&ccedil;&atilde;o, desenvolvimento e enlace da cena dentro da coes&atilde;o com a
+								hist&oacute;ria do personagem. </p>
+
+						</li>
+
+						<li>
+
+							<p><strong>CONTE&Uacute;DO E QUALIDADE AUDIO-VISUAL: </strong>Qualidade e
+								utiliza&ccedil;&atilde;o do v&iacute;deo e cen&aacute;rios(opcionais) utilizados,
+								qualidade e bom entendimento do &aacute;udio ou voz do participante. </p>
+
+						</li>
+
+					</ul>
+
+
+
+					<h3 class="western">NOTAS DOS JURADOS:</h3>
+
+					<p style="margin-bottom: 0in; line-height: 100%;">As notas dos jurados s&atilde;o soberanas e
+						incontest&aacute;veis. </p>
+
+
+
+					<h2 class="western">6. REGRAS GERAIS</h2>
+
+					<h3 class="western">CATEGORIA DESFILE</h3>
+
+					<ul>
+
+						<li>
+
+							<p>O participante apenas exibe suas indument&aacute;rias e acess&oacute;rios para os
+								ju&iacute;zes e p&uacute;blico, caminhando at&eacute; a frente dos mesmos, virando de
+								costas e de lado, afim de ser avaliado. N&atilde;o &eacute; necess&aacute;rio fazer
+								nenhum tipo de apresenta&ccedil;&atilde;o ou interpreta&ccedil;&atilde;o.</p>
+
+						</li>
+
+						<li>
+
+							<p>A competi&ccedil;&atilde;o ser&aacute; limitada a 50 participantes. Caso esgotados os
+								n&uacute;meros de inscritos, as inscri&ccedil;&otilde;es ser&atilde;o encerradas e
+								n&atilde;o abriremos exce&ccedil;&otilde;es. </p>
+
+						</li>
+
+						<li>
+
+							<p>Os cosplayers dever&atilde;o, no ato de sua inscri&ccedil;&atilde;o, entregar &agrave;
+								equipe respons&aacute;vel o material de refer&ecirc;ncia impresso, sendo em 4 (quatro)
+								c&oacute;pias iguais, uma para cada juiz. A imagem de refer&ecirc;ncia dever&aacute;
+								consistir em um artwork original na qual a personagem se insere, n&atilde;o sendo
+								aceitas imagens de refer&ecirc;ncia desenhadas por outrem (fanarts). Tamb&eacute;m
+								ser&atilde;o aceitas imagens capturadas diretamente de animes, games, filmes e outro
+								tipo de m&iacute;dia televisiva. Uma refer&ecirc;ncia bem montada conta um b&ocirc;nus
+								de 0.5 no resultado final das notas e poder&aacute; ser utilizada pelos ju&iacute;zes
+								como crit&eacute;rio de desempate. Na falta da mesma o participante receber&aacute;
+								automaticamente a nota m&iacute;nima, por n&atilde;o ser poss&iacute;vel a
+								avalia&ccedil;&atilde;o da indument&aacute;ria com perfei&ccedil;&atilde;o. </p>
+
+						</li>
+
+					</ul>
+
+
+
+					<h3 class="western">CATEGORIA TRADICIONAL</h3>
+
+					<ul>
+
+						<li>
+
+							<p>O participante ter&aacute; de 20 (vinte) segundos at&eacute; 3 (tr&ecirc;s) minutos para
+								fazer uma breve apresenta&ccedil;&atilde;o do seu personagem, no estilo tradicional
+								individual. Caso o participante exceda o tempo ser&aacute; descontado 0,3 por cada 5
+								segundos excedidos. </p>
+
+						</li>
+
+						<li>
+
+							<p>O participante ter&aacute; 80 (oitenta) segundos para montagem e desmontagem do palco,
+								podendo ser divididos de acordo com a necessidade para execu&ccedil;&atilde;o dos
+								mesmos. </p>
+
+						</li>
+
+						<li>
+
+							<p>Os participantes poder&atilde;o contar com o aux&iacute;lio de 2 staffs pessoais para
+								organizar, montar e elaborar a apresenta&ccedil;&atilde;o, por&eacute;m n&atilde;o se
+								pode haver envolvimento em protagonismo ou foco principal durante a
+								apresenta&ccedil;&atilde;o. &Eacute; permitida a utiliza&ccedil;&atilde;o de 1 staff do
+								evento para auxiliar montagem e desmontagem de cen&aacute;rios no palco e acionamento de
+								efeitos simples, por&eacute;m o participante assumir&aacute; o risco de qualquer erro
+								que ocorra devido &agrave; falta de ensaio do staff. </p>
+
+						</li>
+
+						<li>
+
+							<p>N&atilde;o &eacute; permitida a utiliza&ccedil;&atilde;o de l&iacute;quidos ou materiais
+								viscosos, assim como acess&oacute;rios ou objetos que possam colocar em risco a
+								integridade f&iacute;sica dos participantes e dos presentes, tais como fogos de
+								artif&iacute;cio, armas de fogo, extintores, instrumentos cortantes, abrasivos,
+								corrosivos, solventes e outros produtos t&oacute;xicos ou subst&acirc;ncias nocivas,
+								mesmo que estes constituam parte da caracteriza&ccedil;&atilde;o. R&eacute;plicas de
+								armas ser&atilde;o permitidas, desde que n&atilde;o representem perigo algum para os
+								presentes no evento. </p>
+
+						</li>
+
+						<li>
+
+							<p>&Eacute; permitida a intera&ccedil;&atilde;o da plateia e/ou apresentadores do concurso
+								com os cosplayers, desde que a mesma seja coerente com as personagens em
+								representa&ccedil;&atilde;o e que n&atilde;o consista em ofensas, constrangimentos, nem
+								exceda o tempo estipulado para a apresenta&ccedil;&atilde;o do participante ou atrapalhe
+								o andamento do concurso. </p>
+
+						</li>
+
+						<li>
+
+							<p>&Eacute; proibido saltar do palco ou atirar objetos que possam causar algum dano para
+								fora do mesmo, sendo pass&iacute;vel de puni&ccedil;&atilde;o por
+								desclassifica&ccedil;&atilde;o. o &Eacute; proibido o uso de qualquer banner/cartaz ou
+								faixa durante a apresenta&ccedil;&atilde;o do participante em palco com mensagens
+								n&atilde;o relacionadas com o personagem ou divulgando algum site ou empresa, sem a
+								respectiva autoriza&ccedil;&atilde;o da organiza&ccedil;&atilde;o do Evento. </p>
+
+						</li>
+
+						<li>
+
+							<p>Ser&aacute; permitida a utiliza&ccedil;&atilde;o de trilha sonora para
+								composi&ccedil;&atilde;o da apresenta&ccedil;&atilde;o, que deve ser entregue no momento
+								da inscri&ccedil;&atilde;o. A mesma deve ser em PEN DRIVE, que ser&aacute; devolvido
+								ap&oacute;s a extra&ccedil;&atilde;o da faixa de &aacute;udio para nossa biblioteca.
+							</p>
+
+						</li>
+
+						<li>
+
+							<p>Os participantes dever&atilde;o estar atentos &agrave;s marca&ccedil;&otilde;es no palco.
+								Haver&aacute; pr&oacute;xima a beirada, na frente do mesmo, uma faixa delimitadora onde
+								ficar&atilde;o os ju&iacute;zes (sem atrapalhar a vis&atilde;o do p&uacute;blico). Ao
+								ultrapassar essa faixa o participante pode denegrir a sua seguran&ccedil;a e dos demais,
+								al&eacute;m de prejudicar a vis&atilde;o dos ju&iacute;zes quanto a sua
+								apresenta&ccedil;&atilde;o. </p>
+
+						</li>
+
+					</ul>
+
+
+
+					<h2 class="western">7. PREMIA&Ccedil;&Atilde;O</h2>
+
+					<ul>
+
+						<li>
+
+							<p>Ser&atilde;o premiados os tr&ecirc;s primeiros colocados de cada concurso.</p>
+
+						</li>
+
+						<li>
+
+							<p>As premia&ccedil;&otilde;es acima mencionadas, n&atilde;o pro&iacute;bem o vencedor de
+								receber outro tipo de premia&ccedil;&atilde;o estabelecida no dia pela
+								organiza&ccedil;&atilde;o do evento. </p>
+
+						</li>
+
+						<li>
+
+							<p>Os casos omissos no regulamento ser&atilde;o analisados pela organiza&ccedil;&atilde;o do
+								concurso. A decis&atilde;o ser&aacute; soberana e inquestion&aacute;vel. </p>
+
+						</li>
+
+					</ul>
+
+
+
+					<h2 class="western">8. VALORES:</h2>
+
+					<h3 class="western">DESFILE (categoria &uacute;nica individual) :</h3>
+
+					<ul>
+
+						<li>
+
+							<p><b>1&deg; Lugar:</b> Trof&eacute;u + Brindes + pr&ecirc;mio a ser divulgado </p>
+
+						</li>
+
+						<li>
+
+							<p><b>2&deg; Lugar:</b> Trof&eacute;u + Brindes + pr&ecirc;mio a ser divulgado </p>
+
+						</li>
+
+						<li>
+
+							<p><b>3&deg; Lugar:</b> Medalha + Brindes + pr&ecirc;mio a ser divulgado </p>
+
+						</li>
+
+					</ul>
+
+					<h3 class="western">APRESENTA&Ccedil;&Atilde;O TRADICIONAL (categoria individual):</h3>
+
+					<ul>
+
+						<li>
+
+							<p><b>1&deg; Lugar:</b> Trof&eacute;u + Brindes + pr&ecirc;mio a ser divulgado </p>
+
+						</li>
+
+						<li>
+
+							<p><b>2&deg; Lugar:</b> Trof&eacute;u + Brindes + pr&ecirc;mio a ser divulgado </p>
+
+						</li>
+
+						<li>
+
+							<p><b>3&deg; Lugar:</b> Medalha + Brindes + pr&ecirc;mio a ser divulgado </p>
+
+						</li>
+
+					</ul>
+
+
+
+				</div>
+
+
+
+
+
+
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
