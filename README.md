@@ -1,6 +1,4 @@
-# Portfolio
-
-## Projects I have implemented so far:
+# Projects I have implemented so far:
 
 - [AP2022](https://silasmarques08.github.io/portfolio/AP2022) is a project developed using HTML (bootstrap), CSS3 and some minor Javascript. It is a website for giving general information, advertising attractions and selling tickets to an anime convention, namely "Anime Poços 2022". You can find the results [online](https://animepocos.com.br).
 
